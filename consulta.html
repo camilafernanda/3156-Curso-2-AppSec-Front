@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="visual.css">
+    <script src="consulta.js"></script>
+    <title>VollMed</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="./img/Logo.png" />
+    </header>
+
+    <main>
+        <article class="resumo">
+            <header>
+                <div>
+                    <h1>Olá, boas vindas!</h1>
+                    <p id="elemento_nome"></p>
+                </div>
+            </header>
+            <section>
+                <img src="./img/Ilustracao.png" />
+            </section>
+        </article>
+
+        <article class="formulario">
+            <header>
+                <h1>Busca por paciente</h1>
+            </header>
+
+            <form>
+                <input type="text" id="nome_busca" placeholder="Nome"/>
+                <button type="submit" onClick="consultaPaciente(event)">Buscar</button>
+            </form>
+        </article>
+
+        <section>
+            <h2>Dados</h2>
+            <section id="lista_resultado" class="biblioteca-lista">
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="./img/Logo.png" />
+        <div class="container-botoes">
+            <button class="redireciona" onclick="redirecionar()">Ir para consulta de pacientes</button>
+            <button class="redireciona" onclick="voltar()">Voltar</button>
+        </div>
+    </footer>
+</body>
+</html>
